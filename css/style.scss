@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+html{
+    font-weight: 600;
+    a{
+        text-decoration: none;
+    }
+}
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+$raleway:'Raleway', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$fonts: 1vw;
+
+header{
+    max-width: 85vw;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1vw 0;
+    position: relative;
+    z-index: 3;
+    .header-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            height: 3vw;
+            width: 14.85vw;
+            background-image: url("./../img/logo.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .sherule{
+            font-family: $raleway;
+            p{
+                padding: 0;
+                line-height: 1vw;
+                font-size: $fonts;
+            }
+        }
+        .maket-home{
+            font-family: $montserrat;
+            a{
+                display: flex;
+                align-items: center;
+                .maket-home-icon{
+                    width: 3vw;
+                    height: 3vw;
+                    background-image: url("./../img/modelling.svg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    margin: 0.5vw;  
+                    transition: 0.5s;
+                    &:hover{
+                        transform: scale(1.25,1.25);
+                    }                  
+                }
+                p{
+                    color: #000;
+                    line-height: 2vw;
+                    border-bottom: 0.02vw solid #000;
+                    font-size: $fonts;
+                    transition: 0.5s;
+                    &:hover{
+                        color: #319F1C;
+                    }    
+                }
+            }
+        }
+        .contacts{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .tel-icon{
+                width: 3vw;
+                height: 3vw;
+                margin: 0.5vw;
+                background-image: url("./../img/telephone.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                transition: 0.75s ease-out;
+                &:hover{
+                    transform: rotate(360deg);
+                }
+            }
+            .all-contacts{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: $fonts;
+                font-family: $montserrat;
+                b{
+                    line-height: 2vw;
+                    font-family: 'Montserrat', sans-serif;
+                }
+                .messengers{
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    .whats-app, .telegram, .viber{
+                        width: 1.2vw;
+                        height: 1.2vw;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        transition: 0.5s;
+                        &:hover{
+                            transform: scale(1.5, 1.5);
+                        }
+                    }
+                    .whats-app{background-image: url("./../img/whatsapp.svg");}
+                    .telegram{background-image: url("./../img/telegram.svg");}
+                    .viber{background-image: url("./../img/viber.svg");}
+                }
+            }
+            button{
+                font-family: $raleway;
+                font-weight: 800;
+                border: none;
+                background-color: #319F1C;
+                padding: 1vw 3vw;
+                color: #fff;
+                font-size: $fonts;
+                border-radius: 0.5vw;
+                margin-left: 1vw;
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(0.9, 0.9);
+                    box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+                }
+            }
+        }
+    }
+    .header-bottom{
+        font-family: $raleway;
+        .menu{
+            height: 4vw;
+            background: url("./../img/gradient.svg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;   
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            color: #fff;
+            list-style-type: none;
+            li{
+                font-size: $fonts;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+main{
+    margin: -6vw 0;
+
+    .working-perfect{
+        background-image: url("./../img/home.png");
+        background-position: right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 6vw 7.5vw;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 8vw;
+        &::before{
+            z-index: 0;
+            content: "";
+            display: block;
+            background-image: url("./../img/cloud.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 45vw;
+            height: 16vw;
+            position: absolute;
+            right: -8vw;
+            top: -4vw;
+        }
+        &::after{
+            z-index: 0;
+            content: "";
+            display: block;
+            background-image: url("./../img/cloud.png");
+            background-repeat: repeat-x;
+            width: 400vw;
+            position: absolute;
+            background-size: contain;
+            height: 17vw;
+            left: -23vw;
+            bottom: -11vw;
+        }
+        h1{
+            font-family: $montserrat;
+            font-size: 2vw;
+            
+        }
+        p{
+            font-family: $montserrat;
+            font-size: $fonts;
+            max-width: 65%;
+            margin-bottom: 2vw;
+        }
+        form{
+            max-width: 36.3vw;
+            width: 100%;
+            height: 11.2vw;
+            background-color: #fff;
+            box-shadow: 0px 0px 2vw 1vw rgba(0, 0, 0, 0.15);
+            padding: 1.2vw 2.2vw;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-family: $montserrat;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                background-image: url("./../img/welding.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 12vw;
+                height: 12vw;
+                right: 1vw;
+                top: -3.5vw;
+
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                background-image: url("./../img/welding.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 5vw;
+                height: 5vw;
+                transform: rotate(30deg);
+                left: 7vw;
+                bottom: -3vw;
+
+            }
+            h2{
+                margin: 0;
+                font-size: 1.7vw;
+                color: #319F1C;
+            }
+            p{
+                max-width: 100%;  
+                font-size: 0.8vw;
+                margin-bottom: 1vw;
+
+            }
+            input{
+                width: 17.5vw;
+                height: 2vw;
+                border: 0.2vw solid #319F1C;
+                border-radius: 0.5vw;
+                &:nth-child(5){
+                    background-color: #319F1C;
+                    border: none;
+                    color: #fff;
+                    font-size: 1vw;
+                    margin: 0;
+                    width: 18vw;
+                    height: 2.4vw;
+                    transition: 0.5s;
+                    &:hover{
+                        transform: scale(0.9, 0.9);
+                        box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+                    }
+                }
+
+            }
+            span{
+                font-size: 0.6vw;
+                width: 100%;
+                text-align: end;
+            }
+        }
+    }
+    .ksenya{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding: 5vw 7.5vw;
+        position: relative;
+        &::before{
+            z-index: 0;
+            content: "";
+            position: absolute;
+            width: 30vw;
+            height: 40vw;
+            background-image: url("./../img/drawing.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            left: 0;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 20vw;
+            height: 20vw;
+            background-image: url("./../img/pencil.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            right: -3vw;
+            bottom: -7vw;
+        }
+        .photo{
+            width: 30vw;
+            height: 15vw;
+            background-color: #319F1C;
+            border-radius: 2.2vw;
+            position: relative;
+            left: 5vw;
+ 
+            &::after{
+                content: "";
+                position: absolute;
+                width: 20.2vw;
+                height: 27vw;
+                background-image: url("./../img/photo-girl.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        .description{
+            width: 40vw;
+            font-family: $raleway;
+            font-size: 1vw;
+            .description-name{
+                h1{
+                    color: #319F1C;
+                    font-family: $montserrat;
+                }
+                p{
+                    font-family: $raleway;
+                }
+            }
+            b{
+                font-family: $montserrat;
+            }
+            .description-diplom{
+                .year-2012, .year-2010{
+                    display: flex;
+                }
+            }
+            .key-skills{
+                margin-top: 2vw;
+            }
+            .resume{
+                display: flex;
+                align-items: center;
+                .link-resume{
+                    color: #000;
+                    border-bottom: 0.1vw solid #000;
+                    &:hover{
+                        color: #319F1C;
+                        border-bottom: 0.1vw solid #319F1C;
+                    }
+                }
+                .arrow-resume{
+                    margin-left: 4vw;
+                    img{
+                        width: 2vw;
+                        height: 0.5vw;
+                        transition: 0.5s;
+                        &:hover{
+                            transform: scale(1.5,1.5);
+                        }
+                    }
+
+                }
+                
+            }
+        }
+
+    }
+    .portfolio{
+        padding:0 7.5vw;
+        h2{
+            width: 35vw;
+            font-size: 1.5vw;
+            font-family: $montserrat;
+            font-weight: 900;
+        }
+        .portflio-list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            .item{
+                width: 30%;
+                margin-bottom: 2vw;
+                p{
+                    font-family: $montserrat;
+                    font-size: $fonts;
+                }
+                .photo{
+                    position: relative;
+                    width: 100%;
+                    height: 20vw;
+                    background-image: url("./../img/portfolio-image.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    img{
+                        position: absolute;
+                        width: 5vw;
+                        height: 5vw;
+                        right: 0;
+                        transition: 0.5s;
+                        &:hover{
+                            border-radius: 0 0 0 2vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .block-form{
+        background-image: url("./../img/last-background.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 0 7.5vw;
+        margin-top: -2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        .form-content{
+            h2{
+                font-size: 2vw;
+                font-family: $montserrat;
+            }
+            p{
+                font-family: $raleway;
+                font-size: $fonts;
+            }
+            form{
+                padding: 3vw 0 15vw 0;
+                width: 30vw;
+                display: flex;
+                flex-direction: column;
+                input{
+                    margin: 1vw 0;
+                    width: 100%;
+                    height: 2vw;
+                    border: 0.1vw solid #319F1C;
+                    border-radius: 0.5vw;
+                    &:nth-child(3){
+                        height: 5vw;
+                    }
+                    &:nth-child(4){
+                        height: 3vw;
+                        width: 15vw;
+                        color: #fff;
+                        font-size: $fonts;
+                        background-color: #319F1C;
+                        transition: 0.5s;
+                        &:hover{
+                            transform: scale(0.9, 0.9);
+                            box-shadow: 0px 0px 8px 12px rgba(49, 159, 28, 0.64);
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+footer{
+    background-color: #363130;
+    height: 10vw;
+    padding: 3vw 7.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .logo-and-call-btn{
+        .logo{
+            background-image: url("./../img/logo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 15vw;
+            height: 4vw;
+        }
+        button{
+            width: 10vw;
+            height: 3vw;
+            background-color: transparent;
+            font-family: $raleway;
+            font-size: $fonts;
+            border-radius: 0.5vw;
+            color: #fff;
+            border: 0.1vw solid #fff;
+            transition: 0.5s;
+            &:hover{
+                background-color: #fff;
+                color:#363130;
+                
+            }
+        }
+    }
+    .list-nav{
+        height: 8vw;
+        width: 40vw;
+        ul{
+            
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 1vw;
+            font-family: $raleway;
+            list-style-type: none;
+            height: 100%;
+            li{
+                line-height: 1.5vw;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .social{
+        color: #fff;
+        font-family: $raleway; 
+        p{
+            font-size: 0.7vw;
+            max-width: 10vw;
+        }
+        .all-social{
+            display: flex;
+            .vk, .inst, .fb, .youtube{
+                width: 1.5vw;
+                height: 1.5vw;
+                margin-right: 1vw;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(1.3, 1.3);
+                }
+            }
+            .vk{
+                background-image: url("./../img/vk.svg");
+            }
+            .inst{
+                background-image: url("./../img/inst.svg");
+            }
+            .fb{
+                background-image: url("./../img/fb.svg");
+            }
+            .youtube{
+                background-image: url("./../img/yt.svg");
+            }
+        }
+        .devs{
+            .logo-devs{
+                width: 10vw;
+                height: 4vw;
+                background-image: url("./../img/logo2.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(1.3, 1.3);
+                }
+            }
+        }
+    }
+}
+
