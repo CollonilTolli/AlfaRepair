@@ -11,12 +11,13 @@ body{
     margin: 0;
     overflow-x: hidden;
 }
+
 $raleway:'Raleway', sans-serif;
 $montserrat: 'Montserrat', sans-serif;
-$fonts: 1vw;
+$fonts: 0.8vw;
 
 header{
-    max-width: 85vw;
+    max-width: 82.2vw;
     width: 100%;
     margin: 0 auto;
     padding: 1vw 0;
@@ -28,7 +29,7 @@ header{
         align-items: center;
         .logo{
             height: 3vw;
-            width: 14.85vw;
+            width: 15.35vw;
             background-image: url("./../img/logo.png");
             background-repeat: no-repeat;
             background-size: cover;
@@ -47,8 +48,8 @@ header{
                 display: flex;
                 align-items: center;
                 .maket-home-icon{
-                    width: 3vw;
-                    height: 3vw;
+                    width: 3.5vw;
+                    height: 3.5vw;
                     background-image: url("./../img/modelling.svg");
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -74,53 +75,60 @@ header{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .tel-icon{
-                width: 3vw;
-                height: 3vw;
-                margin: 0.5vw;
-                background-image: url("./../img/telephone.svg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                transition: 0.75s ease-out;
-                &:hover{
-                    transform: rotate(360deg);
-                }
-            }
-            .all-contacts{
+            div{
                 display: flex;
-                flex-direction: column;
                 align-items: center;
-                font-size: $fonts;
-                font-family: $montserrat;
-                b{
-                    line-height: 2vw;
-                    font-family: 'Montserrat', sans-serif;
-                }
-                .messengers{
-                    display: flex;
-                    justify-content: space-evenly;
-                    width: 100%;
-                    .whats-app, .telegram, .viber{
-                        width: 1.2vw;
-                        height: 1.2vw;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        transition: 0.5s;
-                        &:hover{
-                            transform: scale(1.5, 1.5);
-                        }
+                .tel-icon{
+                    width: 4vw;
+                    height: 4vw;
+                    margin: 0.5vw;
+                    background-image: url("./../img/telephone.svg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    transition: 0.75s ease-out;
+                    &:hover{
+                        transform: rotate(360deg);
                     }
-                    .whats-app{background-image: url("./../img/whatsapp.svg");}
-                    .telegram{background-image: url("./../img/telegram.svg");}
-                    .viber{background-image: url("./../img/viber.svg");}
+                }
+                .all-contacts{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-size: $fonts;
+                    font-family: $montserrat;
+                    b{
+                        font-size: 1.2vw;
+                        line-height: 2vw;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                    .messengers{
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        .whats-app, .telegram, .viber{
+                            width: 1.2vw;
+                            height: 1.2vw;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            transition: 0.5s;
+                            margin: 0 0.8vw;
+                            &:hover{
+                                transform: scale(1.5, 1.5);
+                            }
+                        }
+                        .whats-app{background-image: url("./../img/whatsapp.svg");}
+                        .telegram{background-image: url("./../img/telegram.svg");}
+                        .viber{background-image: url("./../img/viber.svg");}
+                    }
                 }
             }
+            
             button{
                 font-family: $raleway;
                 font-weight: 800;
                 border: none;
                 background-color: #319F1C;
-                padding: 1vw 3vw;
+                padding: 1.4vw 3.1vw;
                 color: #fff;
                 font-size: $fonts;
                 border-radius: 0.5vw;
@@ -136,21 +144,60 @@ header{
     .header-bottom{
         font-family: $raleway;
         .menu{
-            height: 4vw;
+            height: 5.3vw;
             background: url("./../img/gradient.svg");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;   
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
             align-items: center;
             color: #fff;
             list-style-type: none;
+            padding: 0 9vw;
             li{
                 font-size: $fonts;
+                display: flex;
+                position: relative;
+                .submenu{
+                    position: absolute;
+                    display: block;
+                    transform: scaleY(0);
+                    transition: 0.5s;
+                    width: 4vw;
+                    transform-origin: 0 0;
+                    top: 0;
+                    
+                    background-color: #319F1C;
+                    padding: 1vw;
+                    li{
+                        list-style-type: none;
+                        border-bottom: 0.1vw solid #fff;
+                        a{
+                            line-height: 1.5vw;
+                            font-size: 1vw;
+                            color: #fff;
+                            
+                        }
+                    }
+
+                }
+                &:hover{
+                    .submenu {
+                        transform: scaleY(1);
+                      }
+                }
                 a{
                     color: #fff;
                     text-decoration: none;
+
+                }
+                b{
+                    margin-left: 0.5vw;
+                    font-size: 0.5vw;
+                    display: block;
+                    color: #fff;
+                    transform: rotate(90deg);
                 }
             }
         }
@@ -158,13 +205,44 @@ header{
 }
 main{
     margin: -6vw 0;
-
+    .menu-right-fixed{
+        position: fixed;
+        right: 0;
+        top: 15vw;
+        z-index: 99999;
+        .block{
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            margin: 0.5vw 0;
+            font-family: $raleway;
+            width: 8vw;
+            border-radius: 0.5vw 0 0 0.5vw;
+            margin-right: -5vw;
+            transition: 0.5s;
+            &:hover{
+                margin-right: 0;
+            }
+            a{
+                font-size: 1vw;
+                color: black;
+                &:hover{
+                    color: #319F1C;
+                }
+            }
+            img{
+                margin: 0.5vw;
+                width: 2vw;
+                height: 2vw;
+            }
+        }
+    }
     .working-perfect{
         background-image: url("./../img/home.png");
         background-position: right;
         background-size: contain;
         background-repeat: no-repeat;
-        padding: 6vw 7.5vw;
+        padding: 5vw 8.9vw;
         position: relative;
         z-index: 1;
         margin-bottom: 8vw;
@@ -194,21 +272,24 @@ main{
             left: -23vw;
             bottom: -11vw;
         }
-        h1{
-            font-family: $montserrat;
-            font-size: 2vw;
-            
-        }
-        p{
-            font-family: $montserrat;
-            font-size: $fonts;
-            max-width: 65%;
-            margin-bottom: 2vw;
+        .text-special{
+            h1{
+                font-family: $montserrat;
+                font-size: 1.95vw;
+                line-height: 2.3vw;    
+            }
+            p{
+                font-family: $montserrat;
+                font-size: $fonts;
+                line-height: 1.2vw;
+                max-width: 50%;
+                margin-bottom: 1.5vw;
+            }
         }
         form{
             max-width: 36.3vw;
             width: 100%;
-            height: 11.2vw;
+            height: 12vw;
             background-color: #fff;
             box-shadow: 0px 0px 2vw 1vw rgba(0, 0, 0, 0.15);
             padding: 1.2vw 2.2vw;
@@ -223,10 +304,10 @@ main{
                 background-image: url("./../img/welding.png");
                 background-repeat: no-repeat;
                 background-size: contain;
-                width: 12vw;
-                height: 12vw;
-                right: 1vw;
-                top: -3.5vw;
+                width: 10vw;
+                height: 10vw;
+                right: 3.2vw;
+                top: -1.8vw;
 
             }
             &::after{
@@ -235,11 +316,11 @@ main{
                 background-image: url("./../img/welding.png");
                 background-repeat: no-repeat;
                 background-size: contain;
-                width: 5vw;
-                height: 5vw;
+                width: 4.6vw;
+                height: 4.6vw;
                 transform: rotate(30deg);
                 left: 7vw;
-                bottom: -3vw;
+                bottom: -2.8vw;
 
             }
             h2{
@@ -254,18 +335,20 @@ main{
 
             }
             input{
-                width: 17.5vw;
-                height: 2vw;
-                border: 0.2vw solid #319F1C;
+                width: 16vw;
+                height: 1.9vw;
+                border: 0.1vw solid #319F1C;
                 border-radius: 0.5vw;
+                padding-left: 1.5vw;
+                font-size: 1vw;
                 &:nth-child(5){
                     background-color: #319F1C;
                     border: none;
                     color: #fff;
                     font-size: 1vw;
                     margin: 0;
-                    width: 18vw;
-                    height: 2.4vw;
+                    width: 17.7vw;
+                    height: 2.1vw;
                     transition: 0.5s;
                     &:hover{
                         transform: scale(0.9, 0.9);
@@ -285,7 +368,7 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: end;
-        padding: 5vw 7.5vw;
+        padding: 5vw 8.9vw;
         position: relative;
         &::before{
             z-index: 0;
@@ -310,8 +393,8 @@ main{
             bottom: -7vw;
         }
         .photo{
-            width: 30vw;
-            height: 15vw;
+            width: 26.5vw;
+            height: 13vw;
             background-color: #319F1C;
             border-radius: 2.2vw;
             position: relative;
@@ -321,25 +404,27 @@ main{
                 content: "";
                 position: absolute;
                 width: 20.2vw;
-                height: 27vw;
+                height: 26.3vw;
                 background-image: url("./../img/photo-girl.png");
                 background-repeat: no-repeat;
                 background-size: contain;
                 bottom: 0;
-                right: 0;
+                right: -0.6vw;
             }
         }
         .description{
-            width: 40vw;
+            width: 42vw;
             font-family: $raleway;
-            font-size: 1vw;
+            font-size: 0.85vw;
             .description-name{
                 h1{
                     color: #319F1C;
                     font-family: $montserrat;
+                    font-size: 1.6vw;
                 }
                 p{
                     font-family: $raleway;
+                    margin: 1.2vw 0;
                 }
             }
             b{
@@ -348,14 +433,16 @@ main{
             .description-diplom{
                 .year-2012, .year-2010{
                     display: flex;
+                    margin: 0.5vw 0;
                 }
             }
             .key-skills{
-                margin-top: 2vw;
+                margin-top: 1.4vw;
             }
             .resume{
                 display: flex;
                 align-items: center;
+                margin-top: 3.2vw;
                 .link-resume{
                     color: #000;
                     border-bottom: 0.1vw solid #000;
@@ -365,7 +452,7 @@ main{
                     }
                 }
                 .arrow-resume{
-                    margin-left: 4vw;
+                    margin-left: 2vw;
                     img{
                         width: 2vw;
                         height: 0.5vw;
@@ -382,12 +469,13 @@ main{
 
     }
     .portfolio{
-        padding:0 7.5vw;
+        padding:0 8.9vw;
         h2{
-            width: 35vw;
-            font-size: 1.5vw;
+            width: 40vw;
+            font-size: 1.75vw;
             font-family: $montserrat;
             font-weight: 900;
+            margin-bottom: 3.7vw;
         }
         .portflio-list{
             display: flex;
@@ -395,16 +483,16 @@ main{
             justify-content: space-between;
             width: 100%;
             .item{
-                width: 30%;
+                width: 32.5%;
                 margin-bottom: 2vw;
                 p{
                     font-family: $montserrat;
-                    font-size: $fonts;
+                    font-size: 1.2vw;
                 }
                 .photo{
                     position: relative;
                     width: 100%;
-                    height: 20vw;
+                    height: 16.1vw;
                     background-image: url("./../img/portfolio-image.png");
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -426,15 +514,17 @@ main{
         background-image: url("./../img/last-background.png");
         background-repeat: no-repeat;
         background-size: contain;
-        padding: 0 7.5vw;
+        background-position: right top;
+        padding: 0 8.9vw;
         margin-top: -2vw;
+        height: 50vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: end;
         .form-content{
             h2{
-                font-size: 2vw;
+                font-size: 1.85vw;
                 font-family: $montserrat;
             }
             p{
@@ -442,22 +532,32 @@ main{
                 font-size: $fonts;
             }
             form{
-                padding: 3vw 0 15vw 0;
-                width: 30vw;
+                padding: 0.6vw 0 10vw 0;
+                width: 26.2vw;
                 display: flex;
                 flex-direction: column;
+                textarea {
+                    padding: 1vw;
+                    width: 25.2;
+                    resize: none;
+                    height: 4vw;
+                    border: 0.1vw solid #319F1C;
+                    border-radius: 0.1vw;
+                    margin-top: 1.2vw;
+                }
                 input{
-                    margin: 1vw 0;
-                    width: 100%;
+                    margin: 1vw 0 0.1vw 0;
+                    padding: 0 1vw;
+                    width: 25.2;
                     height: 2vw;
                     border: 0.1vw solid #319F1C;
-                    border-radius: 0.5vw;
+                    border-radius: 0.1vw;
                     &:nth-child(3){
                         height: 5vw;
                     }
                     &:nth-child(4){
-                        height: 3vw;
-                        width: 15vw;
+                        height: 2.5vw;
+                        width: 12.5vw;
                         color: #fff;
                         font-size: $fonts;
                         background-color: #319F1C;
@@ -476,7 +576,7 @@ main{
 footer{
     background-color: #363130;
     height: 10vw;
-    padding: 3vw 7.5vw;
+    padding: 3vw 8.9vw;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -520,9 +620,14 @@ footer{
             height: 100%;
             li{
                 line-height: 1.5vw;
+
                 a{
                     color: #fff;
+                    &:hover{
+                        color: #319F1C;
+                    }
                 }
+
             }
         }
     }
@@ -575,4 +680,453 @@ footer{
         }
     }
 }
+.burger{
+    display: none;
+}
+@media (max-width: 960px) {
+    header{
+        .header-top{
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .logo{
+                width: 25%;
+            }
+            .sherule{
+                display: flex;
+                justify-content: space-between;
+                width: 40%;
+                p{
+                    font-size: 1.3vw;
+                }
+            }
+            .maket-home{
+                width: 25%;
+                
+                a{
+                    display: flex;
+                    justify-content: end;
+                    p{
+                        font-size: 1vw;
+                    }
+                }
+            }
+            .contacts{
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                .tel-icon{
+                    width: 5vw;
+                    background-size: contain;
+                }
+                div{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 45%;
+                    .all-contacts{
+                        flex-direction: row;
+                        width: 100%;
+                        b{
+                            font-size: 1.5vw;
+                            width: 15vw;
+                        }
+                        .messengers{
+                            width: 10vw;
+                            .whats-app, .telegram, .viber{
+                                width: 2vw;
+                                height: 2vw;
+                            }
+                        }
+                    }
+                }
+                button{
+                    width: 16.5vw;
+                    font-size: 1vw;
+                    margin-left: 0;
+                }
+                .burger{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    width: 17vw;
+                    cursor: pointer;
+                    .bar1, .bar2, .bar3 {
+                        width: 4vw;
+                        height: 0.6vw;
+                        background-color: #319F1C;
+                        margin: 0.4vw 0;
+                        transition: 0.4s;
+                        border-radius: 1vw;
+                     }
+                     .active-burger .bar1 {
+                       transform: rotate(-45deg) translate(-9px, 6px);
+                     }
+                     
+                     .active-burger .bar2 {opacity: 0;}
+                     
+                     .active-burger .bar3 {
+                       transform: rotate(45deg) translate(-8px, -8px);
+                    }
+                }
+            }
+        }
+        .header-bottom{
+            .menu{
+                background-color: #319F1C;
+                background-image: none;
+                flex-direction: column;
+                align-items: flex-start;
+                position: fixed;
+                top: 0;
+                left: -42vw;
+                height: 100vh;
+                width: 40vw;
+                padding: 0  0 0 2vw;
+                transition: 0.5s;
+                li{
+                    align-items: center;
+                    justify-content:start;
+                    font-size: 2vw;
+                    width: 100%;
+                    b{
+                        font-size: 2vw;
+                        transform: rotate(0);
+                    }                    
+                }
+                .pop-up{
+                    position: relative;
+                    width: 100%;
+                    .submenu{
+                        position: absolute;  
+                        right: 0 !important;
+                        top: -2vw;
+                        width: 10vw;   
+                        padding: 0;   
+                        li{
+                            a{
+                                line-height: 2vw;
+                                font-size: 1.7vw;
+                            }
+                            
+                        }           
+                    }
+                }
+                
+            }
+        }
+    }
+    main{
+        .menu-right-fixed{
+            display: none;
+        }
+        .working-perfect{
+            &::before, &::after{
+                content: none;
+            }
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            height: 50vw;
+            form{
+                width: 35vw;
+                height: 18vw;
+                input{
+                    width: 100%;
+                    font-size: 1vw;
+                    &:nth-child(5){
+                        width: 100%;
+                    }
+                }
+            }
+            .text-special{
+                text-align: end;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding: 1vw;
+                width: 40vw;
+                background-color: rgba(255, 255, 255, 0.8);
+                h1{
+                    color: #319F1C;
+                }
+                p{
+                    max-width: 100%;
+                    font-size: 1.5vw;
+                }
+            }
+        }
+        .ksenya{
+            margin-top: -10vw;
+            align-items: end;
+            margin-bottom: 10vw;
+            &::after{
+                right: 0;
+                bottom: -10vw;
+            }
+            .description{
+                font-size: 1.45vw;
+                width: 45vw;
+                position: relative;
+                .description-name{
+                    h1{
+                        font-size: 2.5vw;
+                    }
+                }
+                .key-skills, .resume{
+                    position: absolute;
+                    left: -37vw;
+                    width: 70vw;
+                    bottom: -15vw
+                }
+                .resume{
+                    bottom: -3vw;
+                }
+            }
+        }
+        .block-form{
+            
+            .form-content{
+                width: 60vw;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                h2{
+                    font-size: 3.05vw;
+                }
+                p{
+                    font-size: 1.5vw;
+                }
+                form{
+                    width: 40vw;
+                    input{
+                        font-size: 1vw;
+                        height: 2.5vw;
+                    }
+                    textarea{
+                        font-size: 1vw;
+                        height: 5vw;
+                    }
+                    input:nth-child(4){
+                        height: 4.5vw;
+                        width: 19.5vw;
+                        font-size: 1.5vw;
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .logo-and-call-btn{
+            button{
+                width: 15vw;
+                height: 5vw;
+                font-size: 1.5vw;
+            }
+        }
+        .list-nav{
+            width: 100%;
+            ul{
+                font-size: 1.5vw;
+            }
+        }
+        .social{
+            width: 33%;
+            p{
+                font-size: 1vw;
+                max-width: 20vw;
+            }
+        }
+    }
+}
+@media (max-width: 540px) {
+    main{
+        .working-perfect{
+            flex-direction: column;
+            height: 100vw;
+            .text-special{
+                align-items: flex-start;
+                text-align: start;
+                width: 100%;
+                h1{
+                    font-size: 3.5vw;
+                    line-height: 4vw;
+                }
+                p{
+                    font-size: 2vw;
+                    line-height: 3.2vw;
+                }
+            }
+            form{
+                max-width: 100%;
+                width: 100%;
+                height: 35vw;
+                .text{
+                    h2{
+                        font-size: 3.7vw;
+                    }
+                    p{
+                        font-size: 2vw;
+                    }
+                }
+                input{
+                    height: 3vw;
+                    font-size: 2vw;
+                    &:nth-child(5){
+                        font-size: 2.5vw;
+                        height: 5vw;            
+                    }
+                }
+                span{
+                    font-size: 1.5vw;
+                }
+            }
+        }
+        .ksenya{
+            align-items: flex-end;
+            flex-direction: column-reverse;
+            .description {
+                width: 100%;
+                font-size: 3vw;
+                .resume,.key-skills{
+                    left: 0;
+                    bottom: -85vw;
+                    width: 80vw;
+                }
+                .resume{
+                    bottom: -38vw;
+                    left: 3vw;
+                    .link-resume{
+                        color: #fff;
+                        border-bottom: 0.1vw solid #fff;
+                    }
+                    .arrow-resume{
+                        display: none;
+                    }
+                }
 
+            }
+            .photo{
+                width: 86.5vw;
+                height: 39vw;
+                margin: 17vw 0;
+                border-radius: 5vw;
+                &::after{
+                    width: 50vw;
+                    height: 66vw;
+                }
+            }
+        }
+        .portfolio{
+            h2{
+                width: 100%;
+                font-size: 3vw;     
+            }
+            .portflio-list{
+                .item{
+                    width: 45%;
+                    .photo{
+                        height: 30vw;
+                        img{
+                            width: 10vw;
+                            height: 10vw;
+                        }
+                    }
+                    p{
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+        .block-form{
+            background-size: 150%;
+            background-position: left top;
+            height: 80vw;
+            .form-content{
+                width: 100%;
+                align-items: start;
+
+                h2{
+                    font-size: 4vw;
+                }
+                p{
+                    font-size: 2.5vw;
+                }
+                form{
+                    width: 100%;
+                    opacity: 0.9;
+                    input{
+                        font-size: 2vw;
+                        height: 4vw;
+                        &:nth-child(4){
+                            height: 7.5vw;
+                            width: 100%;
+                            font-size: 3.5vw;
+                        }
+                    }
+                    textarea{
+                        font-size: 2vw;
+                        height: 10vw;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        height: 60vw;
+        flex-direction: column;
+        .logo-and-call-btn{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .logo{
+                width: 45%;
+                height: 6vw;
+            }
+            button{
+                width: 45%;
+                height: 6vw;
+                font-size: 3vw;
+            }
+        }
+        .list-nav{
+            height: 20vw;
+            ul{
+                flex-direction: row;
+                font-size: 2.5vw;
+                padding: 0;
+                margin: 1vw -1vw;
+                li{
+                    margin: 1vw
+                }
+            }
+        }
+        .social{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            div{
+                width: 45%;
+                p{
+                    font-size: 2.5vw;
+                    max-width: 100%; 
+                }
+                .all-social{
+                    .vk, .inst, .fb, .youtube{
+                        width: 3.5vw;
+                        height: 3.5vw;          
+                    }
+                }
+            }
+            .devs{
+                .logo-devs{
+                    width: 100%;
+                    height: 6vw;
+                }
+            }
+        }
+
+    }
+
+}

@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  max-width: 85vw;
+  max-width: 82.2vw;
   width: 100%;
   margin: 0 auto;
   padding: 1vw 0;
@@ -34,7 +34,7 @@ header .header-top {
 }
 header .header-top .logo {
   height: 3vw;
-  width: 14.85vw;
+  width: 15.35vw;
   background-image: url("./../img/logo.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,7 +45,7 @@ header .header-top .sherule {
 header .header-top .sherule p {
   padding: 0;
   line-height: 1vw;
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 header .header-top .maket-home {
   font-family: "Montserrat", sans-serif;
@@ -59,8 +59,8 @@ header .header-top .maket-home a {
           align-items: center;
 }
 header .header-top .maket-home a .maket-home-icon {
-  width: 3vw;
-  height: 3vw;
+  width: 3.5vw;
+  height: 3.5vw;
   background-image: url("./../img/modelling.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -76,7 +76,7 @@ header .header-top .maket-home a p {
   color: #000;
   line-height: 2vw;
   border-bottom: 0.02vw solid #000;
-  font-size: 1vw;
+  font-size: 0.8vw;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -94,9 +94,17 @@ header .header-top .contacts {
       -ms-flex-align: center;
           align-items: center;
 }
-header .header-top .contacts .tel-icon {
-  width: 3vw;
-  height: 3vw;
+header .header-top .contacts div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-top .contacts div .tel-icon {
+  width: 4vw;
+  height: 4vw;
   margin: 0.5vw;
   background-image: url("./../img/telephone.svg");
   background-size: cover;
@@ -104,11 +112,11 @@ header .header-top .contacts .tel-icon {
   -webkit-transition: 0.75s ease-out;
   transition: 0.75s ease-out;
 }
-header .header-top .contacts .tel-icon:hover {
+header .header-top .contacts div .tel-icon:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
-header .header-top .contacts .all-contacts {
+header .header-top .contacts div .all-contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,41 +127,43 @@ header .header-top .contacts .all-contacts {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1vw;
+  font-size: 0.8vw;
   font-family: "Montserrat", sans-serif;
 }
-header .header-top .contacts .all-contacts b {
+header .header-top .contacts div .all-contacts b {
+  font-size: 1.2vw;
   line-height: 2vw;
   font-family: "Montserrat", sans-serif;
 }
-header .header-top .contacts .all-contacts .messengers {
+header .header-top .contacts div .all-contacts .messengers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
-header .header-top .contacts .all-contacts .messengers .whats-app, header .header-top .contacts .all-contacts .messengers .telegram, header .header-top .contacts .all-contacts .messengers .viber {
+header .header-top .contacts div .all-contacts .messengers .whats-app, header .header-top .contacts div .all-contacts .messengers .telegram, header .header-top .contacts div .all-contacts .messengers .viber {
   width: 1.2vw;
   height: 1.2vw;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  margin: 0 0.8vw;
 }
-header .header-top .contacts .all-contacts .messengers .whats-app:hover, header .header-top .contacts .all-contacts .messengers .telegram:hover, header .header-top .contacts .all-contacts .messengers .viber:hover {
+header .header-top .contacts div .all-contacts .messengers .whats-app:hover, header .header-top .contacts div .all-contacts .messengers .telegram:hover, header .header-top .contacts div .all-contacts .messengers .viber:hover {
   -webkit-transform: scale(1.5, 1.5);
           transform: scale(1.5, 1.5);
 }
-header .header-top .contacts .all-contacts .messengers .whats-app {
+header .header-top .contacts div .all-contacts .messengers .whats-app {
   background-image: url("./../img/whatsapp.svg");
 }
-header .header-top .contacts .all-contacts .messengers .telegram {
+header .header-top .contacts div .all-contacts .messengers .telegram {
   background-image: url("./../img/telegram.svg");
 }
-header .header-top .contacts .all-contacts .messengers .viber {
+header .header-top .contacts div .all-contacts .messengers .viber {
   background-image: url("./../img/viber.svg");
 }
 header .header-top .contacts button {
@@ -161,9 +171,9 @@ header .header-top .contacts button {
   font-weight: 800;
   border: none;
   background-color: #319F1C;
-  padding: 1vw 3vw;
+  padding: 1.4vw 3.1vw;
   color: #fff;
-  font-size: 1vw;
+  font-size: 0.8vw;
   border-radius: 0.5vw;
   margin-left: 1vw;
   -webkit-transition: 0.5s;
@@ -179,7 +189,7 @@ header .header-bottom {
   font-family: "Raleway", sans-serif;
 }
 header .header-bottom .menu {
-  height: 4vw;
+  height: 5.3vw;
   background: url("./../img/gradient.svg");
   background-position: center;
   background-size: contain;
@@ -187,32 +197,108 @@ header .header-bottom .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
   list-style-type: none;
+  padding: 0 9vw;
 }
 header .header-bottom .menu li {
+  font-size: 0.8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+header .header-bottom .menu li .submenu {
+  position: absolute;
+  display: block;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 4vw;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  top: 0;
+  background-color: #319F1C;
+  padding: 1vw;
+}
+header .header-bottom .menu li .submenu li {
+  list-style-type: none;
+  border-bottom: 0.1vw solid #fff;
+}
+header .header-bottom .menu li .submenu li a {
+  line-height: 1.5vw;
   font-size: 1vw;
+  color: #fff;
+}
+header .header-bottom .menu li:hover .submenu {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
 }
 header .header-bottom .menu li a {
   color: #fff;
   text-decoration: none;
 }
+header .header-bottom .menu li b {
+  margin-left: 0.5vw;
+  font-size: 0.5vw;
+  display: block;
+  color: #fff;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
 
 main {
   margin: -6vw 0;
+}
+main .menu-right-fixed {
+  position: fixed;
+  right: 0;
+  top: 15vw;
+  z-index: 99999;
+}
+main .menu-right-fixed .block {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5vw 0;
+  font-family: "Raleway", sans-serif;
+  width: 8vw;
+  border-radius: 0.5vw 0 0 0.5vw;
+  margin-right: -5vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+main .menu-right-fixed .block:hover {
+  margin-right: 0;
+}
+main .menu-right-fixed .block a {
+  font-size: 1vw;
+  color: black;
+}
+main .menu-right-fixed .block a:hover {
+  color: #319F1C;
+}
+main .menu-right-fixed .block img {
+  margin: 0.5vw;
+  width: 2vw;
+  height: 2vw;
 }
 main .working-perfect {
   background-image: url("./../img/home.png");
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 6vw 7.5vw;
+  padding: 5vw 8.9vw;
   position: relative;
   z-index: 1;
   margin-bottom: 8vw;
@@ -243,20 +329,22 @@ main .working-perfect::after {
   left: -23vw;
   bottom: -11vw;
 }
-main .working-perfect h1 {
+main .working-perfect .text-special h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 2vw;
+  font-size: 1.95vw;
+  line-height: 2.3vw;
 }
-main .working-perfect p {
+main .working-perfect .text-special p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1vw;
-  max-width: 65%;
-  margin-bottom: 2vw;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  max-width: 50%;
+  margin-bottom: 1.5vw;
 }
 main .working-perfect form {
   max-width: 36.3vw;
   width: 100%;
-  height: 11.2vw;
+  height: 12vw;
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 2vw 1vw rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 2vw 1vw rgba(0, 0, 0, 0.15);
@@ -278,10 +366,10 @@ main .working-perfect form::before {
   background-image: url("./../img/welding.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 12vw;
-  height: 12vw;
-  right: 1vw;
-  top: -3.5vw;
+  width: 10vw;
+  height: 10vw;
+  right: 3.2vw;
+  top: -1.8vw;
 }
 main .working-perfect form::after {
   content: "";
@@ -289,12 +377,12 @@ main .working-perfect form::after {
   background-image: url("./../img/welding.png");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 5vw;
-  height: 5vw;
+  width: 4.6vw;
+  height: 4.6vw;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
   left: 7vw;
-  bottom: -3vw;
+  bottom: -2.8vw;
 }
 main .working-perfect form h2 {
   margin: 0;
@@ -307,10 +395,12 @@ main .working-perfect form p {
   margin-bottom: 1vw;
 }
 main .working-perfect form input {
-  width: 17.5vw;
-  height: 2vw;
-  border: 0.2vw solid #319F1C;
+  width: 16vw;
+  height: 1.9vw;
+  border: 0.1vw solid #319F1C;
   border-radius: 0.5vw;
+  padding-left: 1.5vw;
+  font-size: 1vw;
 }
 main .working-perfect form input:nth-child(5) {
   background-color: #319F1C;
@@ -318,8 +408,8 @@ main .working-perfect form input:nth-child(5) {
   color: #fff;
   font-size: 1vw;
   margin: 0;
-  width: 18vw;
-  height: 2.4vw;
+  width: 17.7vw;
+  height: 2.1vw;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -344,7 +434,7 @@ main .ksenya {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  padding: 5vw 7.5vw;
+  padding: 5vw 8.9vw;
   position: relative;
 }
 main .ksenya::before {
@@ -370,8 +460,8 @@ main .ksenya::after {
   bottom: -7vw;
 }
 main .ksenya .photo {
-  width: 30vw;
-  height: 15vw;
+  width: 26.5vw;
+  height: 13vw;
   background-color: #319F1C;
   border-radius: 2.2vw;
   position: relative;
@@ -381,24 +471,26 @@ main .ksenya .photo::after {
   content: "";
   position: absolute;
   width: 20.2vw;
-  height: 27vw;
+  height: 26.3vw;
   background-image: url("./../img/photo-girl.png");
   background-repeat: no-repeat;
   background-size: contain;
   bottom: 0;
-  right: 0;
+  right: -0.6vw;
 }
 main .ksenya .description {
-  width: 40vw;
+  width: 42vw;
   font-family: "Raleway", sans-serif;
-  font-size: 1vw;
+  font-size: 0.85vw;
 }
 main .ksenya .description .description-name h1 {
   color: #319F1C;
   font-family: "Montserrat", sans-serif;
+  font-size: 1.6vw;
 }
 main .ksenya .description .description-name p {
   font-family: "Raleway", sans-serif;
+  margin: 1.2vw 0;
 }
 main .ksenya .description b {
   font-family: "Montserrat", sans-serif;
@@ -407,9 +499,10 @@ main .ksenya .description .description-diplom .year-2012, main .ksenya .descript
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0.5vw 0;
 }
 main .ksenya .description .key-skills {
-  margin-top: 2vw;
+  margin-top: 1.4vw;
 }
 main .ksenya .description .resume {
   display: -webkit-box;
@@ -418,6 +511,7 @@ main .ksenya .description .resume {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 3.2vw;
 }
 main .ksenya .description .resume .link-resume {
   color: #000;
@@ -428,7 +522,7 @@ main .ksenya .description .resume .link-resume:hover {
   border-bottom: 0.1vw solid #319F1C;
 }
 main .ksenya .description .resume .arrow-resume {
-  margin-left: 4vw;
+  margin-left: 2vw;
 }
 main .ksenya .description .resume .arrow-resume img {
   width: 2vw;
@@ -441,13 +535,14 @@ main .ksenya .description .resume .arrow-resume img:hover {
           transform: scale(1.5, 1.5);
 }
 main .portfolio {
-  padding: 0 7.5vw;
+  padding: 0 8.9vw;
 }
 main .portfolio h2 {
-  width: 35vw;
-  font-size: 1.5vw;
+  width: 40vw;
+  font-size: 1.75vw;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
+  margin-bottom: 3.7vw;
 }
 main .portfolio .portflio-list {
   display: -webkit-box;
@@ -461,17 +556,17 @@ main .portfolio .portflio-list {
   width: 100%;
 }
 main .portfolio .portflio-list .item {
-  width: 30%;
+  width: 32.5%;
   margin-bottom: 2vw;
 }
 main .portfolio .portflio-list .item p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 main .portfolio .portflio-list .item .photo {
   position: relative;
   width: 100%;
-  height: 20vw;
+  height: 16.1vw;
   background-image: url("./../img/portfolio-image.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -491,8 +586,10 @@ main .block-form {
   background-image: url("./../img/last-background.png");
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 0 7.5vw;
+  background-position: right top;
+  padding: 0 8.9vw;
   margin-top: -2vw;
+  height: 50vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,16 +605,16 @@ main .block-form {
           align-items: end;
 }
 main .block-form .form-content h2 {
-  font-size: 2vw;
+  font-size: 1.85vw;
   font-family: "Montserrat", sans-serif;
 }
 main .block-form .form-content p {
   font-family: "Raleway", sans-serif;
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 main .block-form .form-content form {
-  padding: 3vw 0 15vw 0;
-  width: 30vw;
+  padding: 0.6vw 0 10vw 0;
+  width: 26.2vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,21 +623,31 @@ main .block-form .form-content form {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+main .block-form .form-content form textarea {
+  padding: 1vw;
+  width: 25.2;
+  resize: none;
+  height: 4vw;
+  border: 0.1vw solid #319F1C;
+  border-radius: 0.1vw;
+  margin-top: 1.2vw;
+}
 main .block-form .form-content form input {
-  margin: 1vw 0;
-  width: 100%;
+  margin: 1vw 0 0.1vw 0;
+  padding: 0 1vw;
+  width: 25.2;
   height: 2vw;
   border: 0.1vw solid #319F1C;
-  border-radius: 0.5vw;
+  border-radius: 0.1vw;
 }
 main .block-form .form-content form input:nth-child(3) {
   height: 5vw;
 }
 main .block-form .form-content form input:nth-child(4) {
-  height: 3vw;
-  width: 15vw;
+  height: 2.5vw;
+  width: 12.5vw;
   color: #fff;
-  font-size: 1vw;
+  font-size: 0.8vw;
   background-color: #319F1C;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -555,7 +662,7 @@ main .block-form .form-content form input:nth-child(4):hover {
 footer {
   background-color: #363130;
   height: 10vw;
-  padding: 3vw 7.5vw;
+  padding: 3vw 8.9vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -578,7 +685,7 @@ footer .logo-and-call-btn button {
   height: 3vw;
   background-color: transparent;
   font-family: "Raleway", sans-serif;
-  font-size: 1vw;
+  font-size: 0.8vw;
   border-radius: 0.5vw;
   color: #fff;
   border: 0.1vw solid #fff;
@@ -616,6 +723,9 @@ footer .list-nav ul li {
 }
 footer .list-nav ul li a {
   color: #fff;
+}
+footer .list-nav ul li a:hover {
+  color: #319F1C;
 }
 footer .social {
   color: #fff;
@@ -668,4 +778,519 @@ footer .social .devs .logo-devs {
 footer .social .devs .logo-devs:hover {
   -webkit-transform: scale(1.3, 1.3);
           transform: scale(1.3, 1.3);
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  header .header-top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .header-top .logo {
+    width: 25%;
+  }
+  header .header-top .sherule {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 40%;
+  }
+  header .header-top .sherule p {
+    font-size: 1.3vw;
+  }
+  header .header-top .maket-home {
+    width: 25%;
+  }
+  header .header-top .maket-home a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  header .header-top .maket-home a p {
+    font-size: 1vw;
+  }
+  header .header-top .contacts {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-top .contacts .tel-icon {
+    width: 5vw;
+    background-size: contain;
+  }
+  header .header-top .contacts div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 45%;
+  }
+  header .header-top .contacts div .all-contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  header .header-top .contacts div .all-contacts b {
+    font-size: 1.5vw;
+    width: 15vw;
+  }
+  header .header-top .contacts div .all-contacts .messengers {
+    width: 10vw;
+  }
+  header .header-top .contacts div .all-contacts .messengers .whats-app, header .header-top .contacts div .all-contacts .messengers .telegram, header .header-top .contacts div .all-contacts .messengers .viber {
+    width: 2vw;
+    height: 2vw;
+  }
+  header .header-top .contacts button {
+    width: 16.5vw;
+    font-size: 1vw;
+    margin-left: 0;
+  }
+  header .header-top .contacts .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 17vw;
+    cursor: pointer;
+  }
+  header .header-top .contacts .burger .bar1, header .header-top .contacts .burger .bar2, header .header-top .contacts .burger .bar3 {
+    width: 4vw;
+    height: 0.6vw;
+    background-color: #319F1C;
+    margin: 0.4vw 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 1vw;
+  }
+  header .header-top .contacts .burger .active-burger .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  header .header-top .contacts .burger .active-burger .bar2 {
+    opacity: 0;
+  }
+  header .header-top .contacts .burger .active-burger .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+  }
+  header .header-bottom .menu {
+    background-color: #319F1C;
+    background-image: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: -42vw;
+    height: 100vh;
+    width: 40vw;
+    padding: 0 0 0 2vw;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  header .header-bottom .menu li {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    font-size: 2vw;
+    width: 100%;
+  }
+  header .header-bottom .menu li b {
+    font-size: 2vw;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  header .header-bottom .menu .pop-up {
+    position: relative;
+    width: 100%;
+  }
+  header .header-bottom .menu .pop-up .submenu {
+    position: absolute;
+    right: 0 !important;
+    top: -2vw;
+    width: 10vw;
+    padding: 0;
+  }
+  header .header-bottom .menu .pop-up .submenu li a {
+    line-height: 2vw;
+    font-size: 1.7vw;
+  }
+
+  main .menu-right-fixed {
+    display: none;
+  }
+  main .working-perfect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50vw;
+  }
+  main .working-perfect::before, main .working-perfect::after {
+    content: none;
+  }
+  main .working-perfect form {
+    width: 35vw;
+    height: 18vw;
+  }
+  main .working-perfect form input {
+    width: 100%;
+    font-size: 1vw;
+  }
+  main .working-perfect form input:nth-child(5) {
+    width: 100%;
+  }
+  main .working-perfect .text-special {
+    text-align: end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding: 1vw;
+    width: 40vw;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  main .working-perfect .text-special h1 {
+    color: #319F1C;
+  }
+  main .working-perfect .text-special p {
+    max-width: 100%;
+    font-size: 1.5vw;
+  }
+  main .ksenya {
+    margin-top: -10vw;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    margin-bottom: 10vw;
+  }
+  main .ksenya::after {
+    right: 0;
+    bottom: -10vw;
+  }
+  main .ksenya .description {
+    font-size: 1.45vw;
+    width: 45vw;
+    position: relative;
+  }
+  main .ksenya .description .description-name h1 {
+    font-size: 2.5vw;
+  }
+  main .ksenya .description .key-skills, main .ksenya .description .resume {
+    position: absolute;
+    left: -37vw;
+    width: 70vw;
+    bottom: -15vw;
+  }
+  main .ksenya .description .resume {
+    bottom: -3vw;
+  }
+  main .block-form .form-content {
+    width: 60vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  main .block-form .form-content h2 {
+    font-size: 3.05vw;
+  }
+  main .block-form .form-content p {
+    font-size: 1.5vw;
+  }
+  main .block-form .form-content form {
+    width: 40vw;
+  }
+  main .block-form .form-content form input {
+    font-size: 1vw;
+    height: 2.5vw;
+  }
+  main .block-form .form-content form textarea {
+    font-size: 1vw;
+    height: 5vw;
+  }
+  main .block-form .form-content form input:nth-child(4) {
+    height: 4.5vw;
+    width: 19.5vw;
+    font-size: 1.5vw;
+    margin-left: auto;
+  }
+
+  footer .logo-and-call-btn button {
+    width: 15vw;
+    height: 5vw;
+    font-size: 1.5vw;
+  }
+  footer .list-nav {
+    width: 100%;
+  }
+  footer .list-nav ul {
+    font-size: 1.5vw;
+  }
+  footer .social {
+    width: 33%;
+  }
+  footer .social p {
+    font-size: 1vw;
+    max-width: 20vw;
+  }
+}
+@media (max-width: 540px) {
+  main .working-perfect {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vw;
+  }
+  main .working-perfect .text-special {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: start;
+    width: 100%;
+  }
+  main .working-perfect .text-special h1 {
+    font-size: 3.5vw;
+    line-height: 4vw;
+  }
+  main .working-perfect .text-special p {
+    font-size: 2vw;
+    line-height: 3.2vw;
+  }
+  main .working-perfect form {
+    max-width: 100%;
+    width: 100%;
+    height: 35vw;
+  }
+  main .working-perfect form .text h2 {
+    font-size: 3.7vw;
+  }
+  main .working-perfect form .text p {
+    font-size: 2vw;
+  }
+  main .working-perfect form input {
+    height: 3vw;
+    font-size: 2vw;
+  }
+  main .working-perfect form input:nth-child(5) {
+    font-size: 2.5vw;
+    height: 5vw;
+  }
+  main .working-perfect form span {
+    font-size: 1.5vw;
+  }
+  main .ksenya {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main .ksenya .description {
+    width: 100%;
+    font-size: 3vw;
+  }
+  main .ksenya .description .resume, main .ksenya .description .key-skills {
+    left: 0;
+    bottom: -85vw;
+    width: 80vw;
+  }
+  main .ksenya .description .resume {
+    bottom: -38vw;
+    left: 3vw;
+  }
+  main .ksenya .description .resume .link-resume {
+    color: #fff;
+    border-bottom: 0.1vw solid #fff;
+  }
+  main .ksenya .description .resume .arrow-resume {
+    display: none;
+  }
+  main .ksenya .photo {
+    width: 86.5vw;
+    height: 39vw;
+    margin: 17vw 0;
+    border-radius: 5vw;
+  }
+  main .ksenya .photo::after {
+    width: 50vw;
+    height: 66vw;
+  }
+  main .portfolio h2 {
+    width: 100%;
+    font-size: 3vw;
+  }
+  main .portfolio .portflio-list .item {
+    width: 45%;
+  }
+  main .portfolio .portflio-list .item .photo {
+    height: 30vw;
+  }
+  main .portfolio .portflio-list .item .photo img {
+    width: 10vw;
+    height: 10vw;
+  }
+  main .portfolio .portflio-list .item p {
+    font-size: 2vw;
+  }
+  main .block-form {
+    background-size: 150%;
+    background-position: left top;
+    height: 80vw;
+  }
+  main .block-form .form-content {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  main .block-form .form-content h2 {
+    font-size: 4vw;
+  }
+  main .block-form .form-content p {
+    font-size: 2.5vw;
+  }
+  main .block-form .form-content form {
+    width: 100%;
+    opacity: 0.9;
+  }
+  main .block-form .form-content form input {
+    font-size: 2vw;
+    height: 4vw;
+  }
+  main .block-form .form-content form input:nth-child(4) {
+    height: 7.5vw;
+    width: 100%;
+    font-size: 3.5vw;
+  }
+  main .block-form .form-content form textarea {
+    font-size: 2vw;
+    height: 10vw;
+  }
+
+  footer {
+    height: 60vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .logo-and-call-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  footer .logo-and-call-btn .logo {
+    width: 45%;
+    height: 6vw;
+  }
+  footer .logo-and-call-btn button {
+    width: 45%;
+    height: 6vw;
+    font-size: 3vw;
+  }
+  footer .list-nav {
+    height: 20vw;
+  }
+  footer .list-nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 2.5vw;
+    padding: 0;
+    margin: 1vw -1vw;
+  }
+  footer .list-nav ul li {
+    margin: 1vw;
+  }
+  footer .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  footer .social div {
+    width: 45%;
+  }
+  footer .social div p {
+    font-size: 2.5vw;
+    max-width: 100%;
+  }
+  footer .social div .all-social .vk, footer .social div .all-social .inst, footer .social div .all-social .fb, footer .social div .all-social .youtube {
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+  footer .social .devs .logo-devs {
+    width: 100%;
+    height: 6vw;
+  }
 }
