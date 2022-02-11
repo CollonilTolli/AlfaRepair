@@ -793,7 +793,9 @@ footer .social .devs .logo-devs:hover {
             justify-content: space-between;
   }
   header .header-top .logo {
-    width: 25%;
+    width: 100%;
+    height: 7vw;
+    background-size: contain;
   }
   header .header-top .sherule {
     display: -webkit-box;
@@ -802,24 +804,30 @@ footer .social .devs .logo-devs:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 40%;
+    width: 80%;
   }
   header .header-top .sherule p {
-    font-size: 1.3vw;
+    font-size: 3vw;
+    font-weight: 900;
+    line-height: 6vw;
   }
   header .header-top .maket-home {
-    width: 25%;
+    width: 80%;
   }
   header .header-top .maket-home a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  header .header-top .maket-home a .maket-home-icon {
+    width: 6.5vw;
+    height: 6.5vw;
   }
   header .header-top .maket-home a p {
-    font-size: 1vw;
+    font-size: 3vw;
   }
   header .header-top .contacts {
     width: 100%;
@@ -829,10 +837,6 @@ footer .social .devs .logo-devs:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  header .header-top .contacts .tel-icon {
-    width: 5vw;
-    background-size: contain;
   }
   header .header-top .contacts div {
     display: -webkit-box;
@@ -844,7 +848,12 @@ footer .social .devs .logo-devs:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 45%;
+    width: 65%;
+  }
+  header .header-top .contacts div .tel-icon {
+    width: 8vw;
+    height: 8vw;
+    background-size: contain;
   }
   header .header-top .contacts div .all-contacts {
     -webkit-box-orient: horizontal;
@@ -854,22 +863,26 @@ footer .social .devs .logo-devs:hover {
     width: 100%;
   }
   header .header-top .contacts div .all-contacts b {
-    font-size: 1.5vw;
-    width: 15vw;
+    font-size: 2.5vw;
+    width: 23vw;
   }
   header .header-top .contacts div .all-contacts .messengers {
-    width: 10vw;
+    width: 20vw;
   }
   header .header-top .contacts div .all-contacts .messengers .whats-app, header .header-top .contacts div .all-contacts .messengers .telegram, header .header-top .contacts div .all-contacts .messengers .viber {
-    width: 2vw;
-    height: 2vw;
+    width: 5vw;
+    height: 5vw;
   }
   header .header-top .contacts button {
-    width: 16.5vw;
-    font-size: 1vw;
+    width: 30vw;
+    font-size: 3vw;
+    height: 7vw;
     margin-left: 0;
   }
-  header .header-top .contacts .burger {
+  header .header-top .burger {
+    position: absolute;
+    top: 10vw;
+    right: 0vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -880,28 +893,28 @@ footer .social .devs .logo-devs:hover {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    width: 17vw;
+    width: 15vw;
     cursor: pointer;
   }
-  header .header-top .contacts .burger .bar1, header .header-top .contacts .burger .bar2, header .header-top .contacts .burger .bar3 {
-    width: 4vw;
-    height: 0.6vw;
+  header .header-top .burger .bar1, header .header-top .burger .bar2, header .header-top .burger .bar3 {
+    width: 10vw;
+    height: 1.6vw;
+    margin: 0.8vw 0;
     background-color: #319F1C;
-    margin: 0.4vw 0;
     -webkit-transition: 0.4s;
     transition: 0.4s;
     border-radius: 1vw;
   }
-  header .header-top .contacts .active-burger .bar1 {
-    -webkit-transform: rotate(-45deg) translate(0vw, 1vw);
-            transform: rotate(-45deg) translate(0vw, 1vw);
+  header .header-top .active-burger .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-0.3vw, 1vw);
+            transform: rotate(-45deg) translate(-0.3vw, 1vw);
   }
-  header .header-top .contacts .active-burger .bar2 {
+  header .header-top .active-burger .bar2 {
     opacity: 0;
   }
-  header .header-top .contacts .active-burger .bar3 {
-    -webkit-transform: rotate(45deg) translate(-0.9vw, -2vw);
-            transform: rotate(45deg) translate(-0.9vw, -2vw);
+  header .header-top .active-burger .bar3 {
+    -webkit-transform: rotate(45deg) translate(-3.5vw, -4vw);
+            transform: rotate(45deg) translate(-3.5vw, -4vw);
   }
   header .header-bottom .menu {
     background-color: #319F1C;
