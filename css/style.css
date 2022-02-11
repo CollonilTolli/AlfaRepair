@@ -929,7 +929,7 @@ footer .social .devs .logo-devs:hover {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-    font-size: 2vw;
+    font-size: 4vw;
     width: 100%;
   }
   header .header-bottom .menu li b {
