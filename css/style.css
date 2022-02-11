@@ -893,7 +893,7 @@ footer .social .devs .logo-devs:hover {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    width: 15vw;
+    width: 10vw !important;
     cursor: pointer;
   }
   header .header-top .burger .bar1, header .header-top .burger .bar2, header .header-top .burger .bar3 {
