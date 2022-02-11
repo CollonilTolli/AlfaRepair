@@ -758,16 +758,19 @@ footer{
                         transition: 0.4s;
                         border-radius: 1vw;
                      }
-                     .active-burger .bar1 {
-                       transform: rotate(-45deg) translate(-9px, 6px);
-                     }
-                     
-                     .active-burger .bar2 {opacity: 0;}
-                     
-                     .active-burger .bar3 {
-                       transform: rotate(45deg) translate(-8px, -8px);
-                    }
+
                 }
+                .active-burger{
+                    .bar1 {
+                        transform: rotate(-45deg) translate(0vw, 1vw);
+                      }
+                      
+                    .bar2 {opacity: 0;}
+                      
+                    .bar3 {
+                        transform: rotate(45deg) translate(-0.9vw, -2vw);
+                    }
+                } 
             }
         }
         .header-bottom{

@@ -892,16 +892,16 @@ footer .social .devs .logo-devs:hover {
     transition: 0.4s;
     border-radius: 1vw;
   }
-  header .header-top .contacts .burger .active-burger .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-            transform: rotate(-45deg) translate(-9px, 6px);
+  header .header-top .contacts .active-burger .bar1 {
+    -webkit-transform: rotate(-45deg) translate(0vw, 1vw);
+            transform: rotate(-45deg) translate(0vw, 1vw);
   }
-  header .header-top .contacts .burger .active-burger .bar2 {
+  header .header-top .contacts .active-burger .bar2 {
     opacity: 0;
   }
-  header .header-top .contacts .burger .active-burger .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-            transform: rotate(45deg) translate(-8px, -8px);
+  header .header-top .contacts .active-burger .bar3 {
+    -webkit-transform: rotate(45deg) translate(-0.9vw, -2vw);
+            transform: rotate(45deg) translate(-0.9vw, -2vw);
   }
   header .header-bottom .menu {
     background-color: #319F1C;
